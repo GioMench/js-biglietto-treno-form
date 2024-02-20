@@ -13,7 +13,7 @@ const inputElementAge = document.getElementById('age');
 //input age of passenger
 
 document.getElementById('generate_btn').addEventListener('click', function () {
-    
+
     console.log(inputElementName.value, inputElementKm.value, inputElementAge.value);
     //get value of input
 
@@ -29,11 +29,33 @@ document.getElementById('generate_btn').addEventListener('click', function () {
         price = ((price - price * discountOver).toFixed(2));
         //calc price for over 65
     }
-    const finalPrice =`${price}\u20AC`
+    const finalPrice = `${price}\u20AC`
 
     console.log(finalPrice);
     //final price in human form
+
+    document.getElementById("name_passenger").innerHTML = inputElementName.value;
+    //stamp name of passenger
+
+    let randomOneNumber =  ;
+
+    document.getElementById("carriage_number").innerHTML = randomOneNumber;
+
+    
+    document.getElementById("your_price").innerHTML = finalPrice;
+    //stamp price of ticket
+
 })
+
+document.getElementById('reset_btn').addEventListener('click', function (){
+
+    inputElementName.value = null
+    inputElementKm.value = null
+    inputElementAge.value = null
+    
+})
+
+
 
 
 

@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>JS Biglietto del treno form</title>
 </head>
+
 <body>
-    
+
     <h1>
         calcola il prezzo del tuo biglietto
     </h1>
 
-    
-        Nome e Cognome
-        <input type="text" name="name_surname" id="name_surname" value=""><br>
-        Km da percorrere
-        <input type="text" name="km" id="km" value=""><br>
-        Fascia d'età
-        <input type="text" name="age" id="age" value=""><br>
 
-        <button id="generate_btn">genera</button>
-        <button id="cancel_btn">annulla</button>
-   
+    Nome e Cognome
+    <input type="text" name="name_surname" id="name_surname" value=""><br>
+    Km da percorrere
+    <input type="text" name="km" id="km" value=""><br>
+    Fascia d'età
+    <input type="text" name="age" id="age" value=""><br>
+
+    <input type="button" id="generate_btn" value="genera">
+    <input type="button" id="reset_btn" value="annulla">
+
+
+    <h1>
+        il tuo biglietto 
+    </h1>
+
+    <div id="name_passenger"></div>
+    <div id="carriage_number"></div>
+    <div id="train_number"></div>
+    <div id="your_price"></div>
+
 
 
 
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
